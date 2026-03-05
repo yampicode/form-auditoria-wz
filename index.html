@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="es-ve">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Formulario de Branding - WEBZONA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="author" content="Yampiero Mujica">
+  <meta name="title" content="Formulario para Auditoria">
+  <meta name="description" content="Formulario de auditoría para el branding y sitio web.">
+  <meta name="keywords" content="Diseño web, auditoría web, formulario para Auditoria web, branding">
+  <meta name="theme-color" content="#4682B4">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+<!-- Apple -->
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="WEBZONA | Formulario para auditoria">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<link rel="apple-touch-icon" href="/webzona.png" sizes="180x180">
+<link rel="apple-touch-startup-image" href="https://webzona.vercel.app/webzona-favico.png">
+<meta name="color-scheme" content="light dark">
+
+<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="WEBZONA | Formulario para Auditoria">
+<meta property="og:description" content="Formulario para la auditoría del sitio web y branding.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://webzona.vercel.app">
+<meta property="og:image" content="https://webzona.vercel.app/webzona-favico.png"> <!-- Imagen de 1200x630px -->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WEBZONA | Formulario para Auditoria">
+<meta name="twitter:description" content="Formulario para la Auditoria del sitio web y branding.">
+<meta name="twitter:image" content="https://webzona.vercel.app/webzona-favico.png">
+<title>WEBZONA | Diseño de sitios web en Puerto Cabello</title>
+<link rel="shortcut icon" type="image/x-icon" href="webzona-favico.png">
+
+<!-- Localización -->
+<meta name="geo.region" content="VE-J" />
+<meta name="geo.placename" content="Puerto Cabello, Venezuela" />
+<meta name="geo.position" content="10.4696;-68.0149" />
+<meta name="ICBM" content="10.4696, -68.0149" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      padding: ;
+      line-height: 1.6;
+    }
+
+    .form-container {
+      max-width: 900px;
+      width: 100%;
+      background: white;
+      border-radius: ;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    
+    .logo {
+      display: block;
+      width: 150px;
+      margin: 0 auto;
+    }
+
+    .form-header {
+      background: #4682B4;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .form-header h1 {
+      font-size: 1em;
+      margin-bottom: ;
+      font-family: "Archivo Black";
+      font-weight:;
+        box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+      margin:
+    }
+    .parrafo {
+      font-size: 1em;
+      opacity: 0.95;
+    }
+
+    /* Datos básicos - sección destacada */
+    .basic-data {
+      background: linear-gradient(135deg, #f6f9fc 0%, #e6f0f9 100%);
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 30px;
+      border: 2px solid #667eea;
+    }
+
+    .basic-data h2 {
+      color: #2d3748;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.4em;
+    }
+
+    .basic-data .form-group {
+      margin-bottom: 20px;
+    }
+
+    /* Bloques de preguntas */
+    .block {
+      margin-bottom: 30px;
+      background: #f8fafc;
+      border-radius: 20px;
+      padding: 25px;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+    }
+
+    .block:hover {
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+    }
+
+    .block-title {
+      font-size: 1.5em;
+      color: #2d3748;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #667eea;
+      display: inline-block;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+      animation: fadeIn 0.5s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .basic-data .form-group {
+      animation-delay: 0.1s;
+    }
+    .block:nth-child(2) .form-group {
+      animation-delay: 0.2s;
+    }
+    .block:nth-child(3) .form-group {
+      animation-delay: 0.3s;
+    }
+    .block:nth-child(4) .form-group {
+      animation-delay: 0.4s;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #2d3748;
+      font-size: 1.1em;
+    }
+
+    .question-text {
+      color: #4a5568;
+      margin-bottom: 5px;
+      font-size: 0.95em;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      font-family: inherit;
+      background: white;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .input-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .info-text {
+      background: #ebf4ff;
+      padding: 10px 15px;
+      border-radius: 10px;
+      color: #2b6cb0;
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      flex: 1;
+      min-width: 200px;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #4a5568;
+      border: 2px solid #e2e8f0;
+    }
+
+    .btn-secondary:hover {
+      background: #f7fafc;
+      border-color: #cbd5e0;
+    }
+
+    .saved-section {
+      margin-top: 40px;
+      padding: 25px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+      border-radius: 20px;
+    }
+
+    .saved-section h3 {
+      color: #2d3748;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.3em;
+    }
+
+    .response-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-left: 4px solid #667eea;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .response-card p {
+      margin: 10px 0;
+      color: #4a5568;
+    }
+
+    .response-card strong {
+      color: #2d3748;
+    }
+
+    .response-card small {
+      color: #718096;
+      font-size: 0.85em;
+    }
+
+    .alert {
+      padding: 15px 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .alert-success {
+      background: #c6f6d5;
+      color: #22543d;
+      border: 1px solid #9ae6b4;
+    }
+
+    .alert-error {
+      background: #fed7d7;
+      color: #742a2a;
+      border: 1px solid #fc8181;
+    }
+
+    @media (max-width: 768px) {
+      .form-header h1 {
+        font-size: 2em;
+      }
+
+      .form-body {
+        padding: 20px;
+      }
+
+      .block, .basic-data {
+        padding: 15px;
+      }
+
+      .form-actions {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .loading {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Badge para campos requeridos */
+    .required-badge {
+      color: #e53e3e;
+      font-size: 0.8em;
+      margin-left: 5px;
+    }
+
+    /* Estilo para input de teléfono */
+    input[type="tel"] {
+      letter-spacing: 0.5px;
+    }
+
+    /* Sugerencia de formato */
+    .format-hint {
+      font-size: 0.85em;
+      color: #718096;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-header">
+      <img class="logo" src="https://recursos-seven.vercel.app/webzona.png" alt="Logo de WEBZON." />
+     <hgroup class="hgroup">
+  
+      <h1>📋 Brief de Branding</h1>
+      <h2 class="subtitulo">
+        Completa la información para conocer mejor tu negocio
+      </2>
+      
+         </hgroup>
+         
+      <p class="parrafo">No te preocupes por la extensión, tómate un café y respóndeme con total sinceridad cuando tengas un momento; tus respuestas serán la base de todo el proyecto:</p>
+    </div>
+
+    <div class="form-body">
+      <div id="alert" class="alert"></div>
+
+      <form id="brandingForm">
+        <!-- DATOS BÁSICOS - Con nuevas preguntas -->
+        <div class="basic-data">
+          <h2>📌 Datos de Contacto</h2>
+
+          <div class="form-group">
+            <label>Nombre completo <span class="required-badge">*</span></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Carlos Pérez" required>
+          </div>
+
+          <div class="form-group">
+            <label>Apellidos <span class="required-badge">*</span></label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Ej: González Rodríguez" required>
+          </div>
+
+          <div class="form-group">
+            <label>Nombre de la empresa o marca <span class="required-badge">*</span></label>
+            <input type="text" id="empresa" name="empresa" placeholder="Ej: Soluciones Digitales Pérez" required>
+          </div>
+
+          <div class="form-group">
+            <label>Teléfono / WhatsApp de la empresa <span class="required-badge">*</span></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +58 412 0348988" required>
+            <div class="format-hint">
+              Incluye código de país (ej: +58 para Venezuela)
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Correo electrónico de la empresa <span class="required-badge">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Ej: contacto@tuempresa.com" required>
+          </div>
+        </div>
+
+        <!-- Bloque A: El ADN de tu Empresa -->
+        <div class="block">
+          <h2 class="block-title">🧬 Bloque A: El ADN de tu Empresa</h2>
+
+          <div class="form-group">
+            <label>1. Esencia <span class="required-badge">*</span></label>
+            <div class="question-text">
+              Si tuvieras que explicar qué hace tu empresa en una sola frase corta, ¿qué dirías?
+            </div>
+            <input type="text" id="esencia" name="esencia" placeholder="Ej: Transformamos ideas en experiencias digitales..." required>
+          </div>
+
+          <div class="form-group">
+            <label>2. Propuesta de Valor <span class="required-badge">*</span></label>
+            <div class="question-text">
+              ¿Por qué un cliente debería elegirte a ti y no a la competencia? ¿Qué problema específico resuelves?
+            </div>
+            <textarea id="propuestaValor" name="propuestaValor" placeholder="Describe tu valor diferencial..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>3. Misión y Valores <span class="required-badge">*</span></label>
+            <div class="question-text">
+              ¿Cuáles son los 3 pilares o valores innegociables de tu negocio?
+            </div>
+            <div class="input-group">
+              <input type="text" id="valor1" name="valor1" placeholder="Valor 1" required>
+              <input type="text" id="valor2" name="valor2" placeholder="Valor 2" required>
+              <input type="text" id="valor3" name="valor3" placeholder="Valor 3" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bloque B: Tu Público Objetivo -->
+        <div class="block">
+          <h2 class="block-title">🎯 Bloque B: Tu Público Objetivo</h2>
+
+          <div class="form-group">
+            <label>4. Cliente Ideal <span class="required-badge">*</span></label>
+            <div class="question-text">
+              Describe a tu mejor cliente (edad aproximada, qué le interesa, qué redes sociales usa, qué le preocupa).
+            </div>
+            <textarea id="clienteIdeal" name="clienteIdeal" placeholder="Ej: Mujeres de 25-35 años, interesadas en moda sostenible, usan Instagram..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>5. El "No-Cliente" <span class="required-badge">*</span></label>
+            <div class="question-text">
+              ¿A qué tipo de público no te interesa atraer?
+            </div>
+            <input type="text" id="noCliente" name="noCliente" placeholder="Ej: Clientes que buscan solo precios bajos sin valorar calidad..." required>
+          </div>
+        </div>
+
+        <!-- Bloque C: Imagen y Expectativas -->
+        <div class="block">
+          <h2 class="block-title">🎨 Bloque C: Imagen y Expectativas</h2>
+
+          <div class="form-group">
+            <label>6. Personalidad de marca <span class="required-badge">*</span></label>
+            <div class="question-text">
+              Si tu empresa fuera una persona, ¿cómo vestiría y cómo hablaría? (Ej: Formal y elegante, o joven y disruptiva).
+            </div>
+            <input type="text" id="personalidad" name="personalidad" placeholder="Describe la personalidad de tu marca..." required>
+          </div>
+
+          <div class="form-group">
+            <label>7. Referentes <span class="required-badge">*</span></label>
+            <div class="question-text">
+              Nombra 3 sitios web o perfiles de redes sociales que admires (aunque no sean de tu mismo sector).
+            </div>
+            <div class="input-group">
+              <input type="text" id="referente1" name="referente1" placeholder="Referente 1" required>
+              <input type="text" id="referente2" name="referente2" placeholder="Referente 2" required>
+              <input type="text" id="referente3" name="referente3" placeholder="Referente 3" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>8. Objetivo de la web <span class="required-badge">*</span></label>
+            <div class="question-text">
+              ¿Qué es lo más importante que debe pasar cuando alguien entre a la web?
+            </div>
+            <select id="objetivo" name="objetivo" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="comprar">Que compre mis productos/servicios</option>
+              <option value="portafolio">Que vea mi portafolio/trabajos</option>
+              <option value="mensaje">Que me envíe un mensaje directo</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary" id="submitBtn">
+            <span>📤 Enviar por WhatsApp</span>
+            <span class="loading"></span>
+          </button>
+          <button type="button" class="btn-secondary" id="clearBtn">
+            🗑️ Limpiar respuestas
+          </button>
+        </div>
+      </form>
+
+      <!-- Sección de respuestas guardadas -->
+      <div class="saved-section" id="savedResponses">
+        <h3>💾 Respuestas guardadas</h3>
+        <div id="responsesList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // IDs de las preguntas (incluyendo las nuevas)
+    const questionIds = [
+      'nombre', 'apellidos', 'empresa', 'telefono', 'email',
+      'esencia', 'propuestaValor',
+      'valor1', 'valor2', 'valor3',
+      'clienteIdeal', 'noCliente',
+      'personalidad', 'referente1', 'referente2', 'referente3',
+      'objetivo'
+    ];
+
+    // Textos de las preguntas para mostrar
+    const questionTexts = {
+      nombre: 'Nombre',
+      apellidos: 'Apellidos',
+      empresa: 'Empresa/Marca',
+      telefono: 'Teléfono/WhatsApp',
+      email: 'Correo electrónico',
+      esencia: 'Esencia de la empresa',
+      propuestaValor: 'Propuesta de Valor',
+      valor1: 'Valor 1',
+      valor2: 'Valor 2',
+      valor3: 'Valor 3',
+      clienteIdeal: 'Cliente Ideal',
+      noCliente: 'No-Cliente',
+      personalidad: 'Personalidad de marca',
+      referente1: 'Referente 1',
+      referente2: 'Referente 2',
+      referente3: 'Referente 3',
+      objetivo: 'Objetivo de la web'
+    };
+
+    // Cargar respuestas guardadas al iniciar
+    document.addEventListener('DOMContentLoaded', function() {
+      loadSavedResponses();
+      displaySavedResponses();
+    });
+
+    // Guardar respuestas en localStorage cuando se modifiquen
+    questionIds.forEach(id => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.addEventListener('input', function() {
+          saveResponses();
+        });
+
+        element.addEventListener('change', function() {
+          saveResponses();
+        });
+      }
+    });
+
+    // Función para guardar respuestas en localStorage
+    function saveResponses() {
+      const responses = {};
+      questionIds.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+          responses[id] = element.value;
+        }
+      });
+
+      localStorage.setItem('brandingFormResponses',
+        JSON.stringify(responses));
+      displaySavedResponses();
+    }
+
+    // Función para cargar respuestas desde localStorage
+    function loadSavedResponses() {
+      const saved = localStorage.getItem('brandingFormResponses');
+      if (saved) {
+        try {
+          const responses = JSON.parse(saved);
+          questionIds.forEach(id => {
+            const element = document.getElementById(id);
+            if (element && responses[id]) {
+              element.value = responses[id];
+            }
+          });
+        } catch (e) {
+          console.error('Error loading saved responses:',
+            e);
+        }
+      }
+    }
+
+    // Función para mostrar respuestas guardadas en el DOM
+    function displaySavedResponses() {
+      const saved = localStorage.getItem('brandingFormResponses');
+      const responsesList = document.getElementById('responsesList');
+
+      if (!saved) {
+        responsesList.innerHTML = '<p class="info-text">No hay respuestas guardadas aún. Completa el formulario y se guardarán automáticamente.</p>';
+        return;
+      }
+
+      try {
+        const responses = JSON.parse(saved);
+        let html = '<div class="response-card">';
+        html += '<p><small>📅 Última actualización: ' + new Date().toLocaleString() + '</small></p>';
+
+        // Mostrar datos de contacto primero
+        if (responses.nombre || responses.apellidos || responses.empresa || responses.telefono || responses.email) {
+          html += '<p><strong>📌 DATOS DE CONTACTO</strong></p>';
+          if (responses.nombre || responses.apellidos) {
+            html += `<p><strong>Nombre completo:</strong> ${responses.nombre || ''} ${responses.apellidos || ''}</p>`;
+          }
+          if (responses.empresa) html += `<p><strong>Empresa:</strong> ${responses.empresa}</p>`;
+          if (responses.telefono) html += `<p><strong>Teléfono/WhatsApp:</strong> ${responses.telefono}</p>`;
+          if (responses.email) html += `<p><strong>Email:</strong> ${responses.email}</p>`;
+          html += '<br>';
+        }
+
+        // Mostrar el resto de respuestas
+        const bloqueIds = ['esencia',
+          'propuestaValor',
+          'valor1',
+          'valor2',
+          'valor3',
+          'clienteIdeal',
+          'noCliente',
+          'personalidad',
+          'referente1',
+          'referente2',
+          'referente3',
+          'objetivo'];
+
+        bloqueIds.forEach(id => {
+          if (responses[id] && responses[id].trim() !== '') {
+            // Agrupar valores si es necesario
+            if (id === 'valor1' && responses.valor2 && responses.valor3) {
+              html += `<p><strong>Valores:</strong> ${responses.valor1}, ${responses.valor2}, ${responses.valor3}</p>`;
+            } else if (id === 'referente1' && responses.referente2 && responses.referente3) {
+              html += `<p><strong>Referentes:</strong> ${responses.referente1}, ${responses.referente2}, ${responses.referente3}</p>`;
+            } else if (id !== 'valor2' && id !== 'valor3' && id !== 'referente2' && id !== 'referente3') {
+              html += `<p><strong>${questionTexts[id]}:</strong> ${responses[id]}</p>`;
+            }
+          }
+        });
+
+        html += '</div>';
+        responsesList.innerHTML = html;
+      } catch (e) {
+        responsesList.innerHTML = '<p class="info-text">Error al cargar las respuestas guardadas.</p>';
+      }
+    }
+
+    // Función para mostrar alertas
+    function showAlert(message, type) {
+      const alert = document.getElementById('alert');
+      alert.textContent = message;
+      alert.className = `alert alert-${type}`;
+      alert.style.display = 'block';
+
+      setTimeout(() => {
+        alert.style.display = 'none';
+      },
+        3000);
+    }
+
+    // Función para validar el formulario
+    function validateForm() {
+      for (const id of questionIds) {
+        const element = document.getElementById(id);
+        if (element && element.hasAttribute('required') && !element.value.trim()) {
+          element.focus();
+          element.style.borderColor = '#fc8181';
+          showAlert('Por favor, completa todos los campos requeridos', 'error');
+
+          setTimeout(() => {
+            element.style.borderColor = '#e2e8f0';
+          }, 2000);
+
+          return false;
+        }
+
+        // Validación específica para email
+        if (id === 'email' && element && element.value) {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(element.value)) {
+            element.focus();
+            element.style.borderColor = '#fc8181';
+            showAlert('Por favor, ingresa un correo electrónico válido', 'error');
+            return false;
+          }
+        }
+
+        if (element) {
+          element.style.borderColor = '#e2e8f0';
+        }
+      }
+      return true;
+    }
+
+    // Enviar por WhatsApp
+    document.getElementById('brandingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      if (!validateForm()) {
+        return;
+      }
+
+      const submitBtn = document.getElementById('submitBtn');
+      submitBtn.classList.add('loading');
+      submitBtn.disabled = true;
+
+      // Construir mensaje para WhatsApp
+      let mensaje = '*📋 BRIEF DE BRANDING*\n\n';
+
+      // Datos de contacto
+      mensaje += '*📌 DATOS DE CONTACTO*\n';
+      mensaje += `👤 *Nombre:* ${document.getElementById('nombre').value} ${document.getElementById('apellidos').value}\n`;
+      mensaje += `🏢 *Empresa:* ${document.getElementById('empresa').value}\n`;
+      mensaje += `📞 *Teléfono/WhatsApp:* ${document.getElementById('telefono').value}\n`;
+      mensaje += `📧 *Email:* ${document.getElementById('email').value}\n\n`;
+
+      mensaje += '*🧬 BLOQUE A: ADN DE LA EMPRESA*\n';
+      mensaje += `1️⃣ *Esencia:* ${document.getElementById('esencia').value}\n`;
+      mensaje += `2️⃣ *Propuesta de Valor:* ${document.getElementById('propuestaValor').value}\n`;
+      mensaje += `3️⃣ *Valores:* ${document.getElementById('valor1').value}, ${document.getElementById('valor2').value}, ${document.getElementById('valor3').value}\n\n`;
+
+      mensaje += '*🎯 BLOQUE B: PÚBLICO OBJETIVO*\n';
+      mensaje += `4️⃣ *Cliente Ideal:* ${document.getElementById('clienteIdeal').value}\n`;
+      mensaje += `5️⃣ *No-Cliente:* ${document.getElementById('noCliente').value}\n\n`;
+
+      mensaje += '*🎨 BLOQUE C: IMAGEN Y EXPECTATIVAS*\n';
+      mensaje += `6️⃣ *Personalidad:* ${document.getElementById('personalidad').value}\n`;
+      mensaje += `7️⃣ *Referentes:* ${document.getElementById('referente1').value}, ${document.getElementById('referente2').value}, ${document.getElementById('referente3').value}\n`;
+      mensaje += `8️⃣ *Objetivo Web:* ${document.getElementById('objetivo').value}\n\n`;
+
+      mensaje += `📱 *Enviado el:* ${new Date().toLocaleString()}`;
+
+      // Codificar mensaje para URL
+      const mensajeCodificado = encodeURIComponent(mensaje);
+
+      // Número de WhatsApp
+      const numero = '584120348988';
+
+      // Crear URL de WhatsApp
+      const url = `https://wa.me/${numero}?text=${mensajeCodificado}`;
+
+      // Guardar antes de enviar
+      saveResponses();
+
+      // Abrir WhatsApp
+      window.open(url, '_blank');
+
+      setTimeout(() => {
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+      }, 2000);
+
+      showAlert('¡Formulario enviado a WhatsApp! ✓', 'success');
+    });
+
+    // Botón limpiar
+    document.getElementById('clearBtn').addEventListener('click', function() {
+      if (confirm('¿Estás seguro de que quieres limpiar todas las respuestas?')) {
+        questionIds.forEach(id => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.value = '';
+          }
+        });
+
+        localStorage.removeItem('brandingFormResponses');
+        displaySavedResponses();
+        showAlert('Todas las respuestas han sido limpiadas',
+          'success');
+      }
+    });
+
+    // Auto-guardado cada 30 segundos
+    setInterval(saveResponses, 30000);
+  </script>
+</body>
+</html>
